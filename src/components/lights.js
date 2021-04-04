@@ -5,7 +5,7 @@ const Lights = ({seconds,whatColor}) => {
 
     return (
 
-        <div className="lights">
+        <div className="lights" tabIndex={1}>
 
             {/* Green Light */}
             <div className={`${whatColor() === 'green'? 'greenLight light':'light'}`}>
