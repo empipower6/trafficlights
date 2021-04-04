@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+
+
+.platform{
+    height:70vh;
+    width:40vw;
+    border-radius: 0.6vw;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top:3vw;
+    font-family: 'Roboto', sans-serif;           
+    font-weight:lighter;
+    font-size:1.5vw;
+
+    h1{
+        font-weight:200;
+    }
+
+    .lights{
+        height:40vh;
+        width:10vw;
+        border-radius: 0.6vw;
+        display:flex;
+        flex-flow:column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+
+       
+        
+
+        .light{
+            height:4vw;
+            width:4vw;
+            background: #C4C4C4;
+            border-radius: 50%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            align-content:center;
+
+            .activeH1{
+                line-height:0;
+                color:white;
+                padding-top:0.5vw;
+                
+
+            }
+            .disabledH1{
+                display:none;
+            }
+
+
+        }
+
+       .greenLight{
+        background: #00D12E;
+        box-shadow: 0px 0px 10px #00D12E;
+       }
+       .yellowLight{
+        
+        background: #FFCD1B;
+        box-shadow: 0px 0px 10px #FFCD1B;
+
+       }
+       .redLight{
+        background: #FF1B1B;
+        box-shadow: 0px 0px 10px #FF1B1B;
+
+       }
+
+    }
+
+
+  }
+
+  .platform-green{
+    background-color:#DDFFE4;
+    border: 0.1vw solid #005012;
+    color:#005012;
+
+    .lights{
+        border:0.1vw solid #005012;
+    }
+}
+.platform-yellow{
+    background-color:#FFF2C5;
+    border: 0.1vw solid #FFCD1B;
+    color:#8E7004;
+
+    .lights{
+        border:0.1vw solid #8E7004;
+    }
+}
+.platform-red{
+    background-color:#FFD3D3;
+    border: 0.1vw solid #FF1B1B;
+    color:#930101;
+
+    .lights{
+        border:0.1vw solid #930101;
+    }
+}
+
+@media only screen and (max-width:1024px) and (min-width:480px){
+
+    .platform{
+        height:80vh;
+        width:60vw;
+        font-size:2vw;
+
+        .lights{
+            height:40vh;
+            width:30vw;
+    
+            .light{
+                height:8vw;
+                width:8vw;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:480px){
+
+    .platform{
+        height:70vh;
+        width:80vw;
+        font-size:4vw;
+
+        .lights{
+            height:50vh;
+            width:40vw;
+    
+            .light{
+                height:15vw;
+                width:15vw;
+            }
+        }
+    }
+}
