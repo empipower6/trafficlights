@@ -7,7 +7,7 @@ const Lights = ({seconds,whatColor}) => {
 
     useEffect(()=>{
 
-        focusDiv.current.focus();
+        focusDiv.current.click();
     },[])
 
 
