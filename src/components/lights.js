@@ -1,11 +1,19 @@
-import React from 'react'
+import React,{useRef,useEffect} from 'react'
 
 const Lights = ({seconds,whatColor}) => {
 
 
+    const focusDiv = useRef(null);
+
+    useEffect(()=>{
+
+        focusDiv.current.focus();
+    },[])
+
+
     return (
 
-        <div className="lights" tabIndex={1}>
+        <div className="lights" ref={focusDiv}>
 
             {/* Green Light */}
             <div className={`${whatColor() === 'green'? 'greenLight light':'light'}`}>
