@@ -16,8 +16,8 @@ const Platform = () => {
 
     const timer = () =>{
 
-        //increase the time state by one every second, if 20, go back to 0.
-        time === 20 ? setTime(0):setTime(time+1);
+        //increase the time state by one every second, if 19 (so 20secs in total), go back to 0.
+        time === 19 ? setTime(0):setTime(time+1);
         
 
     }
@@ -25,17 +25,17 @@ const Platform = () => {
     //function to determine which color should be displayed depending on time
     const activeColor = () =>{
 
-        //first 9 seconds is green
-        if(time < 9 ){return 'green'}
+        //first 8 seconds is green
+        if(time < 8 ){return 'green'}
 
         //then 2 seconds of yellow
-        else if(time >=9 && time<=10){return 'yellow'}
+        else if(time >=8 && time<10){return 'yellow'}
 
-        //then 9 seconds of green
-        else if(time> 10 && time <19){return 'red'}
+        //then 8 seconds of green
+        else if(time>= 10 && time <18){return 'red'}
 
         //then another 2 seconds of yellow before it turns into green
-        else if(time>= 19 && time <= 20){return 'yellow'}
+        else if(time>= 18 && time <= 19){return 'yellow'}
         else { return false}
         
     }

@@ -13,3 +13,11 @@ body{
 
   
 }
+
+@media only screen and (max-width:1024px){
+
+  .App{
+    align-items: flex-start;
+    padding-top:5vw;
+  }
+}
